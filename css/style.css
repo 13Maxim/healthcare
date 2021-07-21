@@ -1,0 +1,525 @@
+:root {
+  --primary-color: #0078aa;
+  --dark-color: #363636;
+  --light-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p:not(.top-banner-text),
+.header-nav-menu,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.wrap_padding {
+  padding: 60px 160px 60px 175px;
+}
+
+.header {
+  height: 65px;
+}
+
+.header-wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  background-color: var(--light-color);
+}
+
+.header-nav-menu {
+  list-style: none;
+  display: flex;
+  padding-top: 10px;
+}
+
+.header-nav-menu li + li {
+  margin-left: 20px;
+}
+
+.header-nav-menu li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-nav-menu li a:hover  {
+  color: var(--primary-color);
+  transition: 250ms;
+}
+
+.main-top-banner {
+  background-image: url(../img/lady.jpg);
+  background-size: cover;
+  height: 570px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.top-banner-heading {
+  font-size: 40px;
+}
+
+.top-banner-info-container {
+  width: 540px;
+}
+
+.top-banner-text {
+  color: rgb(143, 143, 143);
+  width: 90%;
+}
+
+.icons-container {
+  display: flex;
+}
+
+.icon-wrap {
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.icon-wrap:hover {
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  border: 1px solid var(--primary-color);
+  transition: 180ms;
+}
+
+.icon-wrap + .icon-wrap {
+  margin-left: 20px;
+}
+
+.main-about {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.img-container {
+  flex: 1 1 52.5%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.img-container img {
+  width: 95%;
+}
+
+.text-container {
+  flex: 1 1 47.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.text-container span {
+  color: var(--primary-color);
+}
+
+.main-big-heading {
+  font-size: 32px;
+  margin-bottom: 9px;
+}
+
+.main-offers .main-big-heading {
+  margin: 0;
+}
+
+.main-small-heading {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.main-small-heading span {
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.after-heading-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.text-container .main-text {
+  width: 350px;
+  max-width: 100%;
+}
+
+p.main-text {
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.main-services {
+  background-image: url(../img/services_bg.jpg);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1 1 31%;
+  background-color: var(--light-color);
+  margin: 25px 0 0 30px;
+  box-sizing: border-box;
+  padding: 22px 22px 25px 25px;
+  max-width: 100%;
+}
+
+.service-item:first-child,
+.service-item:nth-child(4) {
+  margin-left: 0;
+}
+
+.main-offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/pricing_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+}
+
+.offers-container {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.offer-item {
+  flex: 1 1 33.3%;
+  height: 550px;
+  background-color: #47c9e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--light-color);
+  box-sizing: border-box;
+  padding: 45px 0 30px 0;
+}
+
+.offer-services-list  {
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.offer-services-list li + li {
+  margin-top: 23px;
+}
+
+.offer-services-list span {
+  font-size: 18px;
+}
+
+.offer-heading {
+  font-size: 24px;
+  margin: 0;
+}
+
+.offer-price {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.offer-treatments {
+  font-style: italic;
+}
+
+.button {
+  box-sizing: border-box; 
+  width: 115px;
+  height: 48px;
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 15px;
+} 
+
+.button:hover {
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  transition: 150ms;
+}
+
+.offer-item_white {
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  border: 1px solid var(--primary-color);
+  height: 610px;
+  padding: 70px 0 60px 0;
+}
+
+.main-registration {
+  display: flex;
+  padding-top: 25px;
+  height: 555px;
+}
+
+.registration-container {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.registration-container:last-child {
+  padding: 55px 0 100px 40px;
+}
+
+.registration-container:first-child {
+  background-image: url(../img/contact_image.jpg);
+  background-size: cover;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0 0;
+}
+
+.registration-input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 30px;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.registration-input::placeholder {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.submit-button {
+  margin-top: 15px;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  width: 90px;
+  height: 43px;
+  font-size: 12px;
+}
+
+.submit-button:hover {
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  border: 2px solid var(--primary-color);
+}
+
+footer {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  text-align: center;
+  height: 60px;
+}
+
+footer p {
+  margin: 0;
+  padding: 20.5px 0;
+}
+
+.arrow-up {
+  position: fixed;
+  right: 1%;
+  top: 75%;
+  text-decoration: none;
+}
+
+.icon-banner {
+  width: 30px;
+}
+
+.icon-arrow {
+  width: 15px;
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+  .wrap_padding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .service-item {
+    flex: 1 1 27%;
+  }
+
+  .main-top-banner {
+    background-position-x: -250px;
+  }
+
+  .main-offers {
+    background-position-x: -150px;
+  }
+
+  .registration-container:last-child {
+    padding-bottom: 70px;
+  }
+
+  .registration-container:first-child {
+    background-position-x: -70px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .main-top-banner,
+  .header-wrap,
+  .main-about,
+  .main-offers,
+  .main-services,
+  .offers-container,
+  .main-registration {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wrap_padding {
+    padding: 15px 10px 20px 10px;
+  }
+
+  .header-nav-menu {
+    padding-left: 0;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .header-nav-menu li + li {
+    margin-left: 10px;
+  }
+
+  .header-wrap {
+    height: auto;
+  }
+
+  .header {
+    height: 100px;
+  }
+
+  .main-top-banner {
+    padding-top: 100px;
+    height: auto;
+    background-size: cover;
+    background-position-x: -150px;
+    background-repeat: no-repeat;
+    align-items: flex-start;  
+  }
+
+  .top-banner-text {
+    width: 100%;
+  }
+
+  .top-banner-info-container {
+    width: 377px;
+    max-width: 100%;
+  }
+
+  .icons-container {
+    justify-content: space-around;
+    padding: 0 30px;
+  }
+
+  .arrow-up {
+    top: 90%;
+  }
+
+  .img-container img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .services-wrap {
+    flex-direction: column;
+  }
+
+  .service-item {
+    max-width: 370px;
+    margin-left: 0;
+    text-align: start;
+  }
+
+  .offer-item {
+    width: 350px;
+    max-width: 100%;
+  }
+
+  .offer-item + .offer-item {
+    margin-top: 15px;
+  }
+
+  .main-registration {
+    height: 900px;
+  }
+
+  .registration-container:first-child {
+    width: 100%;
+  }
+
+  .registration-container:last-child {
+    width: 100%;
+    padding: 20px 40px 0px 40px;
+  }
+
+  .registration-form .button {
+    margin: 20px auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
